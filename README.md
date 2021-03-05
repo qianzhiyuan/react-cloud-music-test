@@ -15,6 +15,15 @@
 - 播放（自动过滤无版权以及付费歌曲）
 - 歌单列表
 
+#### 当前项目所用库
+
+- react(react hooks)
+- react-router
+- redux
+- axios
+- tiny-swiper
+- scss/styled-components
+
 ###### ps: 因为引用的是[NeteaseCloudMusicApi](https://neteasecloudmusicapi.vercel.app/#/)接口， 有时候打不开可以等会再尝试下
 
 后续内容持续更新中...
