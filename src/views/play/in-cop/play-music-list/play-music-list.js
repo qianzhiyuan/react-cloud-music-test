@@ -28,7 +28,7 @@ const PlayMusicList = (props) => {
   /* 移除当前歌曲 */
   function removeItem(idx) {
     dispatch(removePlayList(idx))
-    if (idx < playIdx) {
+    if (idx < playIdx || (arr.length - 1 === idx && playIdx === idx)) {
       dispatch(prevPlayAction())
     }
   }
