@@ -2,7 +2,7 @@ import React, {memo, useEffect} from 'react';
 import "./play-music-list.scss";
 import {useDispatch} from "react-redux";
 import {lock, clearBodyLocks} from "tua-body-scroll-lock";
-import {nextPlayAction} from "../../../../store/palyList";
+import {prevPlayAction} from "../../../../store/palyList";
 import {removePlayList, setPlayIdx} from "../../../../store/palyList/playListActionCreator";
 import {closeIcon} from "../../../../libs/font-icon";
 
@@ -28,7 +28,9 @@ const PlayMusicList = (props) => {
   /* 移除当前歌曲 */
   function removeItem(idx) {
     dispatch(removePlayList(idx))
-    idx === playIdx && dispatch(nextPlayAction())
+    if (idx < playIdx) {
+      dispatch(prevPlayAction())
+    }
   }
 
   function showMode() {
