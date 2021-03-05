@@ -1,0 +1,113 @@
+.play-music-list-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.play-music-list-ctx {
+  position: fixed;
+  width: 92%;
+  height: 63%;
+  left: 4%;
+  bottom: 4%;
+  background: #fff;
+  border-radius: 35px;
+  font-size: 0;
+  z-index: 3;
+
+  .play-music-list-header {
+    position: absolute;
+    padding: 50px 48px 25px;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 1;
+
+    .play-list-num {
+      margin-left: 10px;
+      color: #989898;
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    .play-mode-text {
+      margin-top: 18px;
+      font-size: 36px;
+    }
+  }
+
+  .play-music-list-scroll {
+    position: absolute;
+    padding-left: 48px;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 11%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .play-music-list-item {
+      padding-right: 50px;
+      width: 100%;
+      height: 128px;
+      border-bottom: 2px solid #f2f2f2;
+      color: #252526;
+      font-size: 45px;
+
+      .play-now-color {
+        color: #eb4d44;
+      }
+
+      .play-music-list-item-title {
+        display: inline-block;
+        max-width: 100%;
+      }
+
+      .play-music-list-item-author {
+        position: relative;
+        display: inline-block;
+        padding-left: 10px;
+        max-width: 50%;
+        top: 5px;
+        font-size: 32px;
+        color: #666667;
+      }
+
+      .play-music-close-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 52px;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .play-music-list-footer {
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 0px -2px 1px #ececec ;/*#ececec*/
+    color: #2e2e2f;
+    font-size: 48px;
+    z-index: 1;
+  }
+}

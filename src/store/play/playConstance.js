@@ -1,0 +1,6 @@
+export const PLAY_STATUS = 'PLAY_STATUS'
+export const PLAY_MODE = 'PLAY_MODE'
+export const PLAY_TIME = 'PLAY_TIME'
+export const ALL_TIME = 'ALL_TIME'
+export const ALL_TIMESTAMP = 'ALL_TIMESTAMP'
+export const PROGRESS_PERCENT = 'PROGRESS_PERCENT'

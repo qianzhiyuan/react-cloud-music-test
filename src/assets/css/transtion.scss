@@ -1,0 +1,193 @@
+.router-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/**
+ * 右侧淡入，右侧淡出
+ */
+.forward-from-right {
+
+  &-enter {
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  &-enter-active {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+
+  &-exit {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  &-exit-active {
+    z-index: 1;
+    opacity: .3;
+    transition: all 500ms;
+  }
+}
+
+
+.back-to-right {
+  &-enter {
+    z-index: 1;
+    opacity: .3;
+  }
+
+  &-enter-active {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+
+  &-exit {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &-exit-active {
+    z-index: 2;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all 500ms;
+  }
+}
+
+/**
+ * 下方淡入，下方淡出
+ */
+.forward-from-bottom {
+  &-enter {
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &-enter-active {
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 500ms;
+  }
+
+  &-exit {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  &-exit-active {
+    z-index: 1;
+    opacity: .3;
+    transition: all 500ms;
+  }
+}
+
+.back-to-bottom {
+  &-enter {
+    z-index: 1;
+    opacity: .3;
+  }
+
+  &-enter-active {
+    z-index: 1;
+    opacity: 1;
+    transition: all 500ms;
+  }
+
+  &-exit {
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-exit-active {
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms;
+  }
+}
+
+.alert {
+  &-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  &-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  &-exit {
+    opacity: 1;
+  }
+  &-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+}
+
+.forward-from-left {
+
+  &-enter {
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  &-enter-active {
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+
+  &-exit {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  &-exit-active {
+    z-index: 1;
+    opacity: .3;
+    transition: all 500ms;
+  }
+}
+
+.from-bottom-to-top {
+  &-enter {
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &-enter-active {
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 500ms;
+  }
+
+  &-exit {
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-exit-active {
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms;
+  }
+}

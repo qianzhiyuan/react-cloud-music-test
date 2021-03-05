@@ -1,0 +1,64 @@
+.header-ctx {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 38px;
+  height: 200px;
+  font-size: 20px;
+
+  .left-icon {
+    width: 15%;
+    height: 102px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .header-search {
+    position: relative;
+    width: 69%;
+    height: 102px;
+    background: #f7f7f7;
+    border-radius: 55px;
+    color: #c3c3c4;
+    font-size: 42px;
+    line-height: 102px;
+
+    .search-icon {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 45%;
+      left: 3%;
+      transform: translateY(-50%);
+    }
+
+    .search-text {
+      padding-left: 14%;
+      display: inline-block;
+      width: 90%;
+    }
+  }
+
+  .right-icon {
+    width: 16%;
+    height: 102px;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .absolute-search-ctx {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 11;
+  }
+}

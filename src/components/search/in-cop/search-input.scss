@@ -1,0 +1,32 @@
+.search-input-ctx {
+  position: fixed;
+  padding: 160px 0 160px 44px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #2c2c2d;
+  font-size: 44px;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  z-index: 1;
+
+  .search-input-blue-line {
+    height: 150px;
+    border-bottom: 3px solid #f1f1f1;
+    color: #446a9f;
+    line-height: 150px;
+  }
+
+  .search-input-answer-div {
+    padding-left: 60px;
+    color: #2c2c2d;
+
+    .search-input-answer {
+      position: relative;
+      height: 124px;
+      border-bottom: 3px solid #eaeaea;
+      line-height: 124px;
+    }
+  }
+}

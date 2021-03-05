@@ -1,0 +1,128 @@
+.search-ctx {
+  padding: 150px 44px 0;
+  width: 100%;
+  min-height: 100%;
+
+  .search-fix-top {
+    position: fixed;
+    padding: 40px 44px 10px;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: #000;
+    font-size: 48px;
+    z-index: 2;
+
+    .search-input-div {
+      position: relative;
+      padding-left: 38px;
+      padding-right: 10px;
+      width: 86%;
+      height: 100%;
+      background: #f5f5f5;
+      border-radius: 55px;
+      overflow: hidden;
+
+      .search-icon {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        left: 3%;
+        transform: translateY(-50%);
+      }
+
+      input {
+        padding-left: 8%;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 0;
+        font-size: 38px;
+      }
+
+      .search-cancel-icon {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        top: 50%;
+        right: 10px;
+        font-size: 36px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        text-align: center;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .hot-search-list-top {
+    height: 133px;
+    border-bottom: 3px solid #ededed;
+    color: #000;
+    font-size: 38px;
+
+    .hot-search-play-btn {
+      width: 175px;
+      height: 73px;
+      border: 3px solid #e4e4e4;
+      border-radius: 35px;
+    }
+  }
+
+  .hot-search-list-div {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hot-search-list-item {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 20px;
+    flex: 0 0 50%;
+    //width: (484%/990) * 100;
+    //width: 50%;
+    height: 105px;
+    line-height: 105px;
+    color: #323232;
+    font-size: 42px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    .hot-search-list-num {
+      position: absolute;
+      width: 60px;
+      top: 0;
+      left: 0;
+      color: #939393;
+      font-weight: bold;
+    }
+
+    .red {
+      color: #e9392f;
+    }
+
+    &.bold {
+      color: #000;
+      font-weight: bold;
+    }
+
+    img {
+      //position: relative;
+      padding-left: 15px;
+      height: 30px;
+    }
+  }
+
+  .hot-search-more {
+    padding: 20px 0;
+    color: #8d8d8d;
+    font-size: 38px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,20 @@
+.album-item-div {
+  padding-right: 28px;
+  width: 330px;
+  display: inline-flex;
+  flex-direction: column;
+
+  .album-img-block {
+    width: 302px;
+    height: 302px;
+    background: #ddd;
+    border-radius: 10px;
+    font-size: 0;
+  }
+
+  .album-item-text {
+    margin-top: 18px;
+    font-size: 32px;
+    -webkit-line-clamp: 2;
+  }
+}

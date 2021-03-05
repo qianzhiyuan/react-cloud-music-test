@@ -1,0 +1,126 @@
+.playContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #305154;
+  min-height: 100%;
+
+  .playCtxHeader {
+    padding: 28px 55px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #61dafb;
+    color: #fff;
+    font-size: 0;
+
+    .playHeaderL {
+      width: 46px;
+      height: 67px;
+      background: #ff0074;
+      font-size: 10px;
+    }
+
+    .playHeaderT {
+      width: 55%;
+      text-align: center;
+      font-size: 44px;
+      line-height: 1;
+
+      .playHeaderTitle {
+        font-size: 52px;
+      }
+    }
+
+    .playHeaderR {
+      width: 60px;
+      height: 60px;
+      background: #ff0074;
+      border-radius: 50%;
+      font-size: 0;
+    }
+  }
+
+  .playCtxContent {
+    padding: 100px 0;
+    flex-grow: 1;
+
+    .playRotateRound {
+      margin: 0 auto;
+      padding-bottom: 67%; /* 设置成正方形 */
+      width: 67%;
+      height: 0;
+      background: linear-gradient(red, blue);
+      border-radius: 50%;
+    }
+
+    .playRun {
+      -webkit-animation: spin 5s infinite linear;
+    }
+  }
+
+  .playCtxFooter {
+    padding-bottom: 100px;
+    width: 100%;
+    background: #61dafb;
+
+    .playMusicInfoBtn {
+      padding: 0 84px;
+
+      span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        font-size: 20px;
+        background: rgba(0, 0, 0, .1);
+        border-radius: 50%;
+      }
+    }
+
+    .playMusicControl {
+      margin-top: 65px;
+      padding: 0 80px;
+      font-size: 0;
+
+      span {
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        background: #6e6e6f;
+        border-radius: 50%;
+      }
+
+      .playPauseBtn {
+        width: 175px;
+        height: 175px;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 15px #fff;
+  }
+  25% {
+    transform: rotate(90deg);
+    box-shadow: 0 0 30px #fff;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0 0 45px #fff;
+  }
+  75% {
+    transform: rotate(270deg);
+    box-shadow: 0 0 30px #fff;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 15px #fff;
+  }
+}
+
+

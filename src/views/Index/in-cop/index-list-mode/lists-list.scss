@@ -1,0 +1,12 @@
+.index-lists-list-ctx {
+  width: 100%;
+  //white-space: nowrap;
+  font-size: 0;
+  overflow-x: scroll;
+
+  .index-lists-swiper-wrapper.swiper-wrapper {
+    .swiper-slide {
+      flex-direction: column;
+    }
+  }
+}

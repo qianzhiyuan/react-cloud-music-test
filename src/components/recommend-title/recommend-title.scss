@@ -1,0 +1,23 @@
+.index-recommend-title {
+  padding: 0 34px;
+  width: 100%;
+  color: #000;
+  font-size: 58px;
+  font-weight: bold;
+
+  .min-recommend-font {
+    padding-left: 2px;
+    color: #b0b0b0;
+    font-size: 36px;
+  }
+
+  .look-more-btn {
+    display: inline-flex;
+    padding: 0 28px;
+    height: 75px;
+    color: #1e1e1f;
+    border: 3px solid #e3e3e3;
+    border-radius: 48px;
+    font-size: 36px;
+  }
+}

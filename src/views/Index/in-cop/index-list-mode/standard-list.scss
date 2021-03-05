@@ -1,0 +1,16 @@
+.index-list-inner-ctx {
+  margin-top: 34px;
+  display: flex;
+  overflow-x: scroll;
+
+  .album-item-div {
+    &:first-child {
+      margin-left: 43px;
+    }
+
+    &:last-child {
+      padding-right: 43px;
+      width: 345px;
+    }
+  }
+}

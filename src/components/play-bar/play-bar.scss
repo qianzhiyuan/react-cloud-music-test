@@ -1,0 +1,85 @@
+.play-fixed-bar-ctx {
+  position: fixed;
+  padding: 0 48px;
+  width: 100%;
+  height: 128px;
+  left: 0;
+  bottom: 200px;
+  background: #f7f6f7;
+  color: #2c2c2c;
+  font-size: 40px;
+  z-index: 99;
+
+  .play-bar-round {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    top: -28px;
+    background: #ddd;
+    border-radius: 50%;
+    //font-size: 0;
+
+    &.play-min-run {
+      -webkit-animation: min-spin 5s infinite linear;
+    }
+  }
+
+  .play-bar-content {
+    padding-left: 25px;
+    flex: 1;
+    color: #2c2c2c;
+
+    .play-bar-content-title {
+      position: relative;
+      display: inline-block;
+      max-width: 70%;
+      top: -1px;
+      vertical-align: middle;
+    }
+
+    .play-bar-min-font {
+      padding-left: 5px;
+      color: #585858;
+      font-size: 32px;
+    }
+  }
+
+  .play-control-bar {
+    padding-left: 62px;
+    width: 268px;
+
+    .play-control-play-icon {
+      width: 80px;
+      height: 80px;
+    }
+
+    .play-control-more-icon {
+      margin-left: 65px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+
+  @keyframes min-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &.fix-bottom-0 {
+    bottom: 0;
+  }
+}

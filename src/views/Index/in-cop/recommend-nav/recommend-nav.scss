@@ -1,0 +1,50 @@
+.index-recommend-ctx {
+  padding: 45px 0 45px;
+
+  img {
+    width: 132px;
+    font-size: 0;
+  }
+
+  .index-recommend-list {
+    display: flex;
+    filter: blur(1px);
+    overflow: auto;
+  }
+
+  .index-recommend-item {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 52px;
+    color: #6e6e6f;
+    font-size: 36px;
+
+    .del-shadow {
+      width: 132px;
+      height: 132px;
+      background: linear-gradient(to right, #fe5546, #fe1508);
+      border-radius: 50%;
+      font-size: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .recommend-text {
+      margin-top: 25px;
+      width: 145px;
+      text-align: center;
+    }
+
+    &:first-child {
+      margin-left: 40px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

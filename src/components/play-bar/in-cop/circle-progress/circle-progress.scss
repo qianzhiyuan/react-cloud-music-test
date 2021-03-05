@@ -1,0 +1,67 @@
+.circle-progress-ctx {
+  position: relative;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+
+
+  .circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #262626;
+    border-radius: 50%;
+  }
+
+  .clip_left, .clip_right {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .circle_left, .circle_right {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background: #e1e1e1;
+    border-radius: 50%;
+  }
+
+  .circle_right, .clip_right {
+    clip: rect(0, auto, auto, 40px);
+  }
+
+  .circle_left, .clip_left {
+    clip: rect(0, 40px, auto, 0);
+  }
+
+  /*
+  *当top和left取值为auto时，相当于0
+  *当bottom和right取值为auto时，相当于100%
+  */
+  .mask {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 5px;
+    left: 5px;
+    background: #f7f6f7;
+    border-radius: 50%;
+    font-size: 32px;
+    text-align: center;
+    line-height: 70px;
+
+    p {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      right: -2px;
+      font-size: 0;
+    }
+  }
+}
