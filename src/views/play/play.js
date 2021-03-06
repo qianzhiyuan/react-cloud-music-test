@@ -172,6 +172,7 @@ function Play(props) {
       {/* 歌曲旋转中心/歌词 */}
       <div id="playLyricDiv"
            className="play-ctx-content flex-center-center"
+           style={{height: lyricHeight + 'px'}}
            onClick={toggleLyricDisplay}>
         <div className="absolute-ctx flex-center-center"
              style={{zIndex: !showLyric ? 0 : -1, opacity: !showLyric ? 1 : 0}} data-message={'歌曲图'}>

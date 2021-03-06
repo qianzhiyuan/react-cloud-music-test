@@ -6,35 +6,20 @@ import Play from "../views/play/play";
 export const RouterConfig = [
   {
     path: '/',
-    component: Index,
+    component: Index
   },
   {
     path: '/songlist/:id',
-    component: SongList,
-    regPath: 'songlist',
-    sceneConfig: {
-      enter: 'from-right',
-      exit: 'to-right'
-    }
+    component: SongList
   },
   {
     path: '/search/:search',
     name: '搜索结果',
-    component: SearchResult,
-    regPath: 'search',
-    sceneConfig: {
-      enter: 'from-right',
-      exit: 'to-right'
-    }
+    component: SearchResult
   },
   {
     path: '/playlist',
     name: '播放',
-    component: Play,
-    regPath: 'play',
-    sceneConfig: {
-      enter: 'from-bottom',
-      exit: 'to-bottom'
-    }
+    component: Play
   }
 ];

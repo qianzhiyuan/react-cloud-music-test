@@ -26,12 +26,6 @@ function App() {
   useEffect(() => {
     const audio = document.getElementById('audio')
     let unListen = history.listen((location) => {
-      // 切换页面回到顶部
-      if ((document.body.scrollTop || document.documentElement.scrollTop > 0) &&
-        location.action !== 'POP'
-      ) {
-        window.scrollTo(0, 0)
-      }
       setNowRouteName(location.pathname)
     });
 
@@ -69,7 +63,7 @@ function App() {
     <>
       {
         canShowPage && <Router history={history}>
-          <Routes/>
+          <Routes location={history.location}/>
         </Router>
       }
       {
